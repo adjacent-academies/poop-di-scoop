@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Bathroom Mapper' });
+  console.log("hi there");
+  
+  res.render('index', { title: 'My Bathroom Mapper' });
 });
+
 
 module.exports = router;
