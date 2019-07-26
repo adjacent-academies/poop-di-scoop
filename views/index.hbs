@@ -1,43 +1,117 @@
-<html>
+<img src="img/pdsp.png" , style="width:90px;height:90px" , align="middle">
 
-<head>
-    <img src="img/pdsp.png", style="width:90px;height:90px", align="middle">
-</head>
+<table width="100%" border="0">
 
-<body>
-
-    <table width="100%" border="0">
-
-        <tr valign="top">
-            <td width="20%">
-                <div class="ui secondary vertical menu">
-                    <a class="active item">
-                        Add poop
-                    </a>
-                    <a class="item">
-                        Reviews
-                    </a>
-                    <div class="ui dropdown item">
-                        <i class="dropdown icon"></i>
-                        Sort by
-                        <div class="menu">
-                            <div class="header"></div>
-                            <a class="item">closest</a>
-                            <a class="item">most popular</a>
-                            <a class="item">most reviews</a>
-                        </div>
-                    </div>
+    <tr valign="top">
+        <td width="20%">
+            <div class="ui vertical fluid tabular menu">
+                <a class="item active" id="optone">
+                    Map Your Poop
+                </a>
+                <a class="item active" id="opttwo">
+                    Reviews
+                </a>
+                <a class="item active" id="optthree">
+                    Poop team
+                </a>
+            </div>
+            </div>
+            <div class="twelve wide stretched column">
+                <div class="ui segment">
+                    Democratizing the poop experience!
                 </div>
-            </td>
 
-            <td bgcolor="#b5dcb3" height="200" width="60%">
-                <div id='map'></div>
-                <nav id='filter-group' class='filter-group'></nav>
-            </td>
 
-        </tr>
+        <td bgcolor="#b5dcb3" height="200" width="60%">
+            <div id="map"></div>
+            <nav id="filter-group" class="filter-group"></nav>
+        </td>
 
-        <table>
-</body>
+    </tr>
 
-</html>
+</table>
+{{!-- modal for About Us --}}
+<div class="ui modal" id="optone_modal">
+    <i class="close icon"></i>
+    <div class="header">
+        Map Your Poop
+    </div>
+    <div class="image content">
+        <div class="ui medium image">
+            <img src="img/poop_icon.png">
+
+        </div>
+        <div class="description">
+            <div class="ui header">Map your poop!</div>
+            <p>Help us expand your poop experience </p>
+            <p>Log your poop?</p>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui black deny button">
+            Nope
+        </div>
+        <div class="ui positive right labeled icon button">
+            Send us the address
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
+</div>
+
+<div class="ui modal" id="opttwo_modal">
+    <i class="close icon"></i>
+    <div class="header">
+        Review Your Poop
+    </div>
+    <div class="image content">
+        <div class="ui medium image">
+            <img src="img/star_icon.png">
+
+        </div>
+        <div class="description">
+            <div class="ui header">Tell us your poop experience!</div>
+            <p>Review your poop location for a chance to win a trip to Adjacent Academies</p>
+
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui black deny button">
+            Nope
+        </div>
+        <div class="ui positive right labeled icon button">
+            Yea
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
+</div>
+
+<div class="ui modal" id="optthree_modal">
+    <i class="close icon"></i>
+    <div class="header">
+        About Us
+    </div>
+    <div class="image content">
+        <div class="ui medium image">
+            <img src="img/pho.jpeg">
+
+        </div>
+        <div class="description">
+            <div class="ui header">Mission Statement</div>
+            <p>Don't put up with ordinary Sh*t </p>
+            <p>Dan, Ned, Ale, Sohee </p>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    document.getElementById("optone")
+        .addEventListener("click", () => $("#optone_modal").modal("show"))
+
+    document.getElementById("opttwo")
+        .addEventListener("click", () => $("#opttwo_modal").modal("show"))
+
+    document.getElementById("optthree")
+        .addEventListener("click", () => $("#optthree_modal").modal("show"))
+</script>
