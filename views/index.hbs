@@ -1,18 +1,43 @@
+<html>
 
+<head>
+    <img src="img/pdsp.png", style="width:90px;height:90px", align="middle">
+</head>
 
-<img src="img/pdsp.png">
+<body>
 
-<h2>The Poop-di-Scoop Experience</h2>
-<p>This is an interactive map that details the locations of available avant-garde bathrooms in your closest vincinity
+    <table width="100%" border="0">
 
-<p>Dont put up with ordinary Sh*t</p>
+        <tr valign="top">
+            <td width="20%">
+                <div class="ui secondary vertical menu">
+                    <a class="active item">
+                        Add poop
+                    </a>
+                    <a class="item">
+                        Reviews
+                    </a>
+                    <div class="ui dropdown item">
+                        <i class="dropdown icon"></i>
+                        Sort by
+                        <div class="menu">
+                            <div class="header"></div>
+                            <a class="item">closest</a>
+                            <a class="item">most popular</a>
+                            <a class="item">most reviews</a>
+                        </div>
+                    </div>
+                </div>
+            </td>
 
-<div id="map"></div>
+            <td bgcolor="#b5dcb3" height="200" width="60%">
+                <div id='map'></div>
+                <nav id='filter-group' class='filter-group'></nav>
+            </td>
 
+        </tr>
 
-{{!-- <ul>
-  {{#each places}}
-  <li>{{ name }} <div class="ui star rating poop-di-scoop-rating" data-rating="{{rating}}"></div></li>
-  
-  {{/each}} --}}
-{{!-- </ul> --}}
+        <table>
+</body>
+
+</html>
