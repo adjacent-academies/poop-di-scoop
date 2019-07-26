@@ -1,8 +1,8 @@
 body {
-  background-color: black;
+  background-color: white;
   padding: 50px;
 }
-a {
+/* a {
   color: rgb(255, 255, 255);
   font: 14px "Courier New", Courier, monospace;
 }
@@ -28,9 +28,11 @@ title {
 
 .colorfont {
   font: white;
-}
+} */
 
 #map {
   height: 800px;
   width: 100%;
 }
+
+
