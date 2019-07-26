@@ -1,8 +1,31 @@
 body {
+  background-color: black;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: rgb(255, 255, 255);
+  font: 14px "Courier New", Courier, monospace;
 }
 
-a {
-  color: #00B7FF;
+p{
+  color:white;
+  font: 20px "Courier New", Courier, monospace;
+}
+
+h2{
+  color: white;
+  font: 20px "Courier New", Courier, monospace;
+}
+div {
+  color: blanchedalmond;
+  font: 14px "Courier New", Courier, monospace;
+}
+
+title {
+  color: blanchedalmond;
+  font: 354px "Courier New", Courier, monospace;
+}
+
+.colorfont{
+  font: white
 }
