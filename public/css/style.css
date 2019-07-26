@@ -7,12 +7,12 @@ a {
   font: 14px "Courier New", Courier, monospace;
 }
 
-p{
-  color:white;
+p {
+  color: white;
   font: 20px "Courier New", Courier, monospace;
 }
 
-h2{
+h2 {
   color: white;
   font: 20px "Courier New", Courier, monospace;
 }
@@ -26,6 +26,11 @@ title {
   font: 354px "Courier New", Courier, monospace;
 }
 
-.colorfont{
-  font: white
+.colorfont {
+  font: white;
+}
+
+#map {
+  position: absolute;
+  width: 100%;
 }
